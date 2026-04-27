@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de finanças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="saldo">
+        <h3 id="saldo"></h3>
+    </div>
+    <div class="titulo">
+        <h1>Controle suas finanças</h1>
+    </div>
+    <div class="label">
+        <h2>Adicionar ganho ou gasto</h2>
+    </div>
+    <div class="text">
+        <input type="text" name="titulo" id="titulo" placeholder="Adicione o título">
+    </div>
+    <div class="valor">
+        <input type="text" name="valor" id="valor" placeholder="Insira o valor em R$">
+    </div>
+    <input type="date" name="data" id="data" placeholder="Insira a data">
+    <input list="rotulo" placeholder="Rótulo">
+    <datalist id="rotulo">
+        <option value="Não importante"></option>
+        <option value="Regular"></option>
+        <option value="Importante"></option>
+        <option value="Necessário"></option>
+        <option value="Urgente"></option>
+    </datalist>
+    <input list="classe" placeholder="Classe">
+    <datalist id="classe">
+        <option value="Gasto"></option>
+        <option value="Ganho"></option>
+    </datalist>
+    <div class="botao">
+        <button onclick="adicionar()">Adicionar</button>
+    </div>
+    <div class="lista">
+        <ul id="lista">
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
